@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ecde">
+  <title>弟子规 · 今读｜成年人传统文化入门</title>
+  <meta name="description" content="面向传统文化入门成年人的《弟子规》互动学习页：原文、今译、历史语境、现代辨析与练习。">
+  <style>
+    :root {
+      --paper: #f3ecde;
+      --paper-deep: #e8dcc8;
+      --ink: #26231f;
+      --muted: #6e675d;
+      --line: rgba(61, 53, 43, .18);
+      --red: #9d2f28;
+      --red-dark: #70211d;
+      --green: #315e52;
+      --gold: #aa7c36;
+      --white: #fffdf8;
+      --shadow: 0 20px 60px rgba(62, 48, 31, .12);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(157,47,40,.08), transparent 26rem),
+        radial-gradient(circle at 90% 30%, rgba(49,94,82,.08), transparent 28rem),
+        var(--paper);
+      font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", STSong, serif;
+      line-height: 1.75;
+    }
+
+    button, input { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid rgba(157,47,40,.32); outline-offset: 3px; }
+
+    .skip-link {
+      position: fixed; left: 16px; top: -80px; z-index: 99;
+      padding: 10px 16px; background: var(--ink); color: white; border-radius: 10px;
+    }
+    .skip-link:focus { top: 16px; }
+
+    .shell { width: min(1160px, calc(100% - 36px)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(243,236,222,.88);
+      backdrop-filter: blur(18px);
+    }
+    .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .08em; }
+    .seal {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border: 2px solid var(--red); color: var(--red); border-radius: 5px;
+      font-size: 14px; line-height: 1; transform: rotate(-2deg);
+    }
+    .nav-links { display: flex; gap: 24px; color: var(--muted); font-size: 14px; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--red); }
+    .progress-wrap { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); }
+    .progress-track { width: 92px; height: 6px; overflow: hidden; background: rgba(61,53,43,.1); border-radius: 99px; }
+    .progress-bar { width: 0; height: 100%; background: var(--red); transition: width .35s ease; }
+
+    .hero { padding: 92px 0 70px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 58px; align-items: center; }
+    .eyebrow { margin: 0 0 14px; color: var(--red); font-size: 14px; letter-spacing: .18em; font-weight: 700; }
+    h1 { margin: 0; font-size: clamp(52px, 8vw, 96px); line-height: 1.02; letter-spacing: -.06em; font-weight: 650; }
+    h1 span { display: block; margin-top: 12px; color: var(--muted); font-size: clamp(22px, 3.2vw, 38px); letter-spacing: .06em; font-weight: 400; }
+    .hero-copy { max-width: 660px; margin: 30px 0 34px; color: var(--muted); font-size: 18px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      border: 1px solid var(--line); border-radius: 999px; padding: 12px 20px;
+      background: rgba(255,253,248,.55); cursor: pointer; text-decoration: none;
+      transition: transform .2s, background .2s, border-color .2s;
+    }
+    .btn:hover { transform: translateY(-2px); border-color: rgba(157,47,40,.42); }
+    .btn.primary { background: var(--red); border-color: var(--red); color: white; }
+    .btn.primary:hover { background: var(--red-dark); }
+
+    .hero-card {
+      position: relative; min-height: 430px; padding: 38px 34px;
+      background: rgba(255,253,248,.68); border: 1px solid rgba(92,76,56,.18);
+      border-radius: 10px 34px 10px 34px; box-shadow: var(--shadow);
+    }
+    .hero-card::before, .hero-card::after { content: ""; position: absolute; background: var(--red); opacity: .7; }
+    .hero-card::before { width: 72px; height: 2px; top: 24px; right: 24px; }
+    .hero-card::after { width: 2px; height: 72px; top: 24px; right: 24px; }
+    .chapter-label { color: var(--red); font-size: 13px; letter-spacing: .16em; }
+    .vertical-quote {
+      margin: 24px auto 30px; writing-mode: vertical-rl; text-orientation: upright;
+      height: 238px; font-size: 28px; line-height: 1.9; letter-spacing: .12em;
+    }
+    .card-note { margin: 0; color: var(--muted); font-size: 14px; text-align: right; }
+
+    .section { padding: 82px 0; }
+    .section-head { display: flex; justify-content: space-between; gap: 28px; align-items: end; margin-bottom: 34px; }
+    .section-head h2 { margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -.03em; }
+    .section-head p { max-width: 520px; margin: 0; color: var(--muted); }
+
+    .path-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .path-card {
+      min-height: 220px; padding: 24px; background: rgba(255,253,248,.55);
+      border: 1px solid var(--line); border-radius: 18px;
+    }
+    .path-card .num { display: block; margin-bottom: 36px; color: var(--red); font-size: 13px; }
+    .path-card h3 { margin: 0 0 8px; font-size: 21px; }
+    .path-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .lesson-shell { display: grid; grid-template-columns: 220px 1fr; gap: 28px; }
+    .lesson-nav { display: flex; flex-direction: column; gap: 8px; }
+    .lesson-tab {
+      width: 100%; padding: 13px 15px; border: 1px solid transparent; border-radius: 12px;
+      background: transparent; text-align: left; cursor: pointer; color: var(--muted);
+    }
+    .lesson-tab:hover { background: rgba(255,253,248,.52); }
+    .lesson-tab.active { background: var(--white); border-color: var(--line); color: var(--red); box-shadow: 0 8px 24px rgba(65,50,32,.07); }
+    .lesson-card { padding: clamp(26px, 5vw, 54px); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .lesson-meta { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 13px; }
+    .lesson-original { margin: 36px 0 10px; color: var(--ink); font-size: clamp(30px, 5vw, 54px); line-height: 1.45; letter-spacing: .08em; }
+    .pinyin { color: var(--red); font-family: Arial, sans-serif; font-size: 14px; letter-spacing: .06em; }
+    .lesson-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 34px; }
+    .explain { padding: 22px; border-radius: 16px; background: #f7f1e6; }
+    .explain.context { background: #eaf1ed; }
+    .explain h3 { margin: 0 0 10px; font-size: 15px; color: var(--red); letter-spacing: .08em; }
+    .explain.context h3 { color: var(--green); }
+    .explain p { margin: 0; color: #524b42; }
+    .reflection { margin-top: 18px; padding: 20px 22px; border-left: 3px solid var(--gold); background: rgba(170,124,54,.08); }
+    .reflection strong { display: block; margin-bottom: 4px; color: #76531f; }
+    .complete-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 30px; }
+    .complete-status { color: var(--green); font-size: 14px; }
+
+    .dialogue { display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px; }
+    .prompt-panel { padding: 32px; border-radius: var(--radius); background: var(--ink); color: var(--paper); }
+    .prompt-panel h2 { margin: 0 0 12px; font-size: 32px; }
+    .prompt-panel p { color: #c9c0b3; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+    .chip { padding: 9px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; color: var(--paper); background: rgba(255,255,255,.04); cursor: pointer; font-size: 13px; }
+    .chip:hover { background: rgba(255,255,255,.1); }
+    .chat { min-height: 420px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,253,248,.72); }
+    .messages { height: 300px; overflow: auto; display: flex; flex-direction: column; gap: 12px; padding-right: 4px; }
+    .message { max-width: 86%; padding: 13px 16px; border-radius: 16px; font-size: 15px; }
+    .message.bot { align-self: flex-start; background: var(--white); border: 1px solid var(--line); border-top-left-radius: 4px; }
+    .message.user { align-self: flex-end; background: var(--green); color: white; border-bottom-right-radius: 4px; }
+    .chat-form { display: flex; gap: 10px; margin-top: 18px; }
+    .chat-form input { flex: 1; min-width: 0; padding: 12px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); color: var(--ink); }
+    .connection { display: inline-flex; align-items: center; gap: 7px; margin: 8px 0 16px; color: #f3d8a9; font-size: 13px; }
+    .connection::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #d49a43; }
+    .connection.ready::before { background: #78bf9f; }
+    .ai-settings { margin-top: 18px; border-top: 1px solid rgba(255,255,255,.2); padding-top: 14px; }
+    .ai-settings summary { cursor: pointer; color: #f3d8a9; }
+    .config-form { display: grid; gap: 9px; margin-top: 12px; }
+    .config-form input { width: 100%; padding: 10px 12px; border: 1px solid rgba(255,255,255,.25); border-radius: 9px; color: #fff; background: rgba(255,255,255,.08); }
+    .config-form input::placeholder { color: rgba(255,255,255,.58); }
+    .config-form small { color: rgba(255,255,255,.65); }
+    .config-form button { justify-self: start; padding: 9px 14px; border: 1px solid rgba(255,255,255,.3); border-radius: 9px; color: #fff; background: rgba(255,255,255,.1); cursor: pointer; }
+    .chat-error { min-height: 24px; margin: 10px 0 0; color: var(--red); font-size: 13px; }
+    .message.pending { color: var(--muted); font-style: italic; }
+    .send { border: 0; border-radius: 12px; padding: 0 18px; background: var(--red); color: white; cursor: pointer; }
+
+    .quiz-card { padding: clamp(26px, 5vw, 48px); background: var(--green); color: white; border-radius: var(--radius); }
+    .quiz-top { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .quiz-top h2 { margin: 0; font-size: 34px; }
+    .quiz-count { color: #c8dbd4; }
+    .quiz-question { margin: 36px 0 24px; font-size: clamp(22px, 3vw, 30px); }
+    .options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .option { padding: 16px; border: 1px solid rgba(255,255,255,.26); border-radius: 14px; background: rgba(255,255,255,.06); color: white; text-align: left; cursor: pointer; }
+    .option:hover { background: rgba(255,255,255,.12); }
+    .option.correct { background: #f0e4c9; color: var(--ink); border-color: #f0e4c9; }
+    .option.wrong { background: #79322e; border-color: #a45d57; }
+    .feedback { min-height: 54px; margin: 18px 0 0; color: #dfeae6; }
+
+    .principle { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .principle-card { padding: 28px; border-top: 1px solid var(--line); }
+    .principle-card h3 { margin: 0 0 8px; font-size: 21px; }
+    .principle-card p { margin: 0; color: var(--muted); }
+    .principle-card strong { color: var(--red); }
+
+    footer { padding: 54px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 24px; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; padding-top: 58px; }
+      .hero-card { min-height: 330px; }
+      .vertical-quote { writing-mode: horizontal-tb; height: auto; margin: 70px 0; text-align: center; }
+      .path-grid { grid-template-columns: 1fr 1fr; }
+      .lesson-shell { grid-template-columns: 1fr; }
+      .lesson-nav { flex-direction: row; overflow-x: auto; padding-bottom: 6px; }
+      .lesson-tab { width: auto; white-space: nowrap; }
+      .dialogue { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 24px, 1160px); }
+      .progress-wrap { display: none; }
+      .hero { padding: 48px 0 36px; gap: 34px; }
+      .hero-copy { font-size: 16px; }
+      .section { padding: 58px 0; }
+      .section-head { align-items: start; flex-direction: column; }
+      .path-grid, .lesson-grid, .options, .principle { grid-template-columns: 1fr; }
+      .lesson-original { letter-spacing: .03em; }
+      .complete-row, .footer-row { align-items: flex-start; flex-direction: column; }
+      .chat-form { flex-wrap: wrap; }
+      .chat-form input { width: 100%; flex-basis: 100%; }
+      .send { min-height: 44px; flex: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="topbar">
+    <div class="shell nav">
+      <div class="brand"><span class="seal" aria-hidden="true">今读</span><span>弟子规 · 今读</span></div>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#path">学习方法</a><a href="#lesson">逐句今读</a><a href="#dialogue">对话助手</a><a href="#quiz">小测</a>
+      </nav>
+      <div class="progress-wrap" aria-label="学习进度"><span id="progressText">0 / 8</span><span class="progress-track"><span class="progress-bar" id="progressBar"></span></span></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shell hero">
+      <div>
+        <p class="eyebrow">传统文化 · 成年人入门</p>
+        <h1>古句，今读。<span>不是背规矩，是理解一种生活伦理。</span></h1>
+        <p class="hero-copy">用八个代表性片段认识《弟子规》：先读原意，再看历史语境，最后问一句——放在今天，我们应该保留什么，又该重新理解什么？</p>
+        <div class="actions">
+          <a class="btn primary" href="#lesson">开始第一课</a>
+          <a class="btn" href="#principle">先看阅读原则</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="今日一句">
+        <span class="chapter-label">今日一句 · 信</span>
+        <blockquote class="vertical-quote">凡出言，信为先。</blockquote>
+        <p class="card-note">可信，比巧辩更长久。</p>
+      </aside>
+    </section>
+
+    <section class="section shell" id="path">
+      <div class="section-head">
+        <h2>四步读懂一句</h2>
+        <p>不预设传统知识，从字面进入，从生活离开。每课约 3 分钟，读完即可形成自己的判断。</p>
+      </div>
+      <div class="path-grid">
+        <article class="path-card"><span class="num">01 / 原句</span><h3>先读它说什么</h3><p>拆开关键词，避免只凭熟悉感猜意思。</p></article>
+        <article class="path-card"><span class="num">02 / 今译</span><h3>换成日常语言</h3><p>去掉古文门槛，但不把含义过度简化。</p></article>
+        <article class="path-card"><span class="num">03 / 语境</span><h3>理解当时为何这样说</h3><p>放回传统家庭与社会秩序中观察。</p></article>
+        <article class="path-card"><span class="num">04 / 辨析</span><h3>带回今天再判断</h3><p>留下仍有价值的部分，修正不合时宜之处。</p></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="lesson">
+      <div class="section-head">
+        <h2>八句入门</h2>
+        <p>点击章节切换。完成一课后，进度会保存在这台设备上。</p>
+      </div>
+      <div class="lesson-shell">
+        <div class="lesson-nav" id="lessonNav" role="tablist" aria-label="课程目录"></div>
+        <article class="lesson-card" id="lessonCard" aria-live="polite">
+          <div class="lesson-meta"><span id="lessonChapter"></span><span id="lessonTime"></span></div>
+          <h3 class="lesson-original" id="lessonOriginal"></h3>
+          <div class="pinyin" id="lessonPinyin"></div>
+          <div class="lesson-grid">
+            <div class="explain"><h3>用今天的话说</h3><p id="lessonModern"></p></div>
+            <div class="explain context"><h3>放回历史里看</h3><p id="lessonContext"></p></div>
+          </div>
+          <div class="reflection"><strong>现代辨析</strong><span id="lessonReflection"></span></div>
+          <div class="complete-row">
+            <span class="complete-status" id="completeStatus"></span>
+            <button class="btn primary" id="completeBtn" type="button">标记为已读</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="dialogue">
+      <div class="dialogue">
+        <div class="prompt-panel">
+          <p class="eyebrow" style="color:#d9b779">AI 对话助手</p>
+          <h2>带着问题读</h2>
+          <div class="connection" id="aiStatus">正在检查大模型连接</div>
+          <p>不知道从哪里问？点一个常见问题。AI 会结合当前课程回答，不会把传统规范当作唯一答案。</p>
+          <div class="chips">
+            <button class="chip" data-question="父母说什么都要听吗？">父母说什么都要听吗？</button>
+            <button class="chip" data-question="孝在今天是什么意思？">今天怎样理解孝？</button>
+            <button class="chip" data-question="这本书有什么局限？">它有什么局限？</button>
+            <button class="chip" data-question="成年人怎么学弟子规？">成年人怎么学？</button>
+          </div>
+          <details class="ai-settings" id="aiSettings">
+            <summary>首次使用：连接大模型</summary>
+            <form class="config-form" id="aiConfigForm">
+              <input id="apiKey" type="password" autocomplete="off" placeholder="DeepSeek API Key" required>
+              <input id="baseUrl" type="url" value="https://api.deepseek.com/v1" aria-label="Base URL" required>
+              <input id="modelName" value="deepseek-chat" aria-label="模型名称" required>
+              <small>密钥只发送到本机服务并保存在本机，不写入 HTML。</small>
+              <button type="submit">保存并测试连接</button>
+            </form>
+          </details>
+        </div>
+        <div class="chat" aria-label="问答区">
+          <div class="messages" id="messages" aria-live="polite">
+            <div class="message bot">你好。我可以陪你讨论“孝、悌、谨、信、爱众、亲仁、学文”。试着问一句，或者点击左侧问题。</div>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <label for="chatInput" class="skip-link">输入问题</label>
+            <input id="chatInput" autocomplete="off" placeholder="例如：‘父母呼，应勿缓’今天还适用吗？">
+            <button class="send" type="submit">发送</button>
+          </form>
+          <p class="chat-error" id="chatError" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="quiz">
+      <div class="quiz-card">
+        <div class="quiz-top"><h2>三题小测</h2><span class="quiz-count" id="quizCount">第 1 / 3 题</span></div>
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="options" id="quizOptions"></div>
+        <p class="feedback" id="quizFeedback" aria-live="polite"></p>
+        <button class="btn" id="nextQuiz" type="button" style="display:none;color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)">下一题</button>
+      </div>
+    </section>
+
+    <section class="section shell" id="principle">
+      <div class="section-head"><h2>阅读原则</h2><p>把它当作理解传统伦理的一扇窗，而不是一份无需讨论的现代行为清单。</p></div>
+      <div class="principle">
+        <article class="principle-card"><h3>理解，不等于照单全收</h3><p>文本形成于特定时代。可吸收其中的尊重、诚信与自省，也应看见等级关系、角色固化等历史局限。</p></article>
+        <article class="principle-card"><h3>孝敬，不等于无条件服从</h3><p>现代关系以相互尊重为基础。面对伤害、违法或不合理要求，<strong>安全、尊严与合法权益优先</strong>。</p></article>
+        <article class="principle-card"><h3>反省，不等于自我贬低</h3><p>“见人恶，即内省”可以理解为检查自身，而不是替他人的错误承担责任。</p></article>
+        <article class="principle-card"><h3>学习，最终要形成判断</h3><p>文本值得讨论，人的经验也值得尊重。好的学习不是背出答案，而是能说清自己的理由。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row"><span>弟子规 · 今读</span><span>面向成年人的传统文化入门学习页 · 所有学习记录仅保存在当前设备</span></div>
+  </footer>
+
+  <script>
+    const lessons = [
+      {
+        chapter: "总叙", title: "学习的次序", time: "约 3 分钟",
+        original: "首孝悌，次谨信；泛爱众，而亲仁；有余力，则学文。",
+        pinyin: "shǒu xiào tì · cì jǐn xìn · fàn ài zhòng · ér qīn rén · yǒu yú lì · zé xué wén",
+        modern: "先学习如何对待亲人，再培养谨慎、守信和关爱他人的品格；亲近有仁德的人，并继续学习知识。",
+        context: "传统启蒙教育常把道德实践放在知识学习之前，强调先学做人，再学文章技艺。",
+        reflection: "今天可以把它读成“品格与知识并重”，不必理解为只有完成所有伦理要求后才有资格学习。"
+      },
+      {
+        chapter: "入则孝", title: "及时回应", time: "约 3 分钟",
+        original: "父母呼，应勿缓；父母命，行勿懒。",
+        pinyin: "fù mǔ hū · yìng wù huǎn · fù mǔ mìng · xíng wù lǎn",
+        modern: "父母呼唤时及时回应；答应去做的合理事情，不拖延敷衍。",
+        context: "传统家庭重视长幼秩序，子女对父母的响应被视为孝道的直接表现。",
+        reflection: "及时回应体现尊重，但不等于无条件服从。面对不合理、危险或侵犯个人边界的要求，可以说明情况并拒绝。"
+      },
+      {
+        chapter: "出则悌", title: "关系中的尊重", time: "约 3 分钟",
+        original: "兄道友，弟道恭；兄弟睦，孝在中。",
+        pinyin: "xiōng dào yǒu · dì dào gōng · xiōng dì mù · xiào zài zhōng",
+        modern: "年长者友爱，年幼者尊重；手足相处和睦，也能减少父母的忧心。",
+        context: "古代家族以长幼有序维持内部稳定，因此分别规定不同身份应尽的责任。",
+        reflection: "现代家庭更强调平等。可保留相互友爱与尊重，不必用年龄决定谁永远正确、谁必须退让。"
+      },
+      {
+        chapter: "谨", title: "珍惜时间", time: "约 2 分钟",
+        original: "朝起早，夜眠迟；老易至，惜此时。",
+        pinyin: "zhāo qǐ zǎo · yè mián chí · lǎo yì zhì · xī cǐ shí",
+        modern: "岁月很快，要珍惜当下，不让时间在无意识中流走。",
+        context: "传统蒙学常以勤勉自律劝诫年轻人，早起晚睡是当时常见的勤学象征。",
+        reflection: "珍惜时间仍有意义，但不应把“晚睡”当作美德。规律作息、有效投入，比牺牲健康更符合现代生活。"
+      },
+      {
+        chapter: "信", title: "言语可信", time: "约 3 分钟",
+        original: "凡出言，信为先；诈与妄，奚可焉。",
+        pinyin: "fán chū yán · xìn wéi xiān · zhà yǔ wàng · xī kě yān",
+        modern: "开口说话，应把真实可信放在前面；欺骗和没有根据的妄言，不可取。",
+        context: "“信”是传统社会交往的重要德目，关系与承诺常依赖个人信誉维系。",
+        reflection: "今天还可以延伸为：转发信息前核实来源，不为了流量夸大，也承认自己不知道。"
+      },
+      {
+        chapter: "信", title: "慎言与核实", time: "约 3 分钟",
+        original: "见未真，勿轻言；知未的，勿轻传。",
+        pinyin: "jiàn wèi zhēn · wù qīng yán · zhī wèi dí · wù qīng chuán",
+        modern: "看见的事情尚未确认，不要轻易下结论；知道得不确切，不要随意传播。",
+        context: "这句话针对日常口舌与传闻，提醒人对自己的言语后果负责。",
+        reflection: "放到社交媒体时代，就是区分事实、意见与猜测；遇到耸动消息，先找可靠来源交叉验证。"
+      },
+      {
+        chapter: "泛爱众", title: "换位思考", time: "约 2 分钟",
+        original: "将加人，先问己；己不欲，即速已。",
+        pinyin: "jiāng jiā rén · xiān wèn jǐ · jǐ bù yù · jí sù yǐ",
+        modern: "准备把某件事施加给别人时，先问自己是否愿意承受；自己不愿意，就及时停止。",
+        context: "它与儒家“己所不欲，勿施于人”的恕道相通，用自我感受作为理解他人的起点。",
+        reflection: "换位思考很重要，但每个人的需求不同。更稳妥的做法是：设身处地之后，再直接询问对方的意愿。"
+      },
+      {
+        chapter: "余力学文", title: "知行相互校正", time: "约 3 分钟",
+        original: "不力行，但学文；长浮华，成何人。",
+        pinyin: "bù lì xíng · dàn xué wén · zhǎng fú huá · chéng hé rén",
+        modern: "只积累知识却不落实在行动中，可能增加夸夸其谈，而没有真正改变自己。",
+        context: "传统儒学重视知行关系，反对把读书变成脱离品格与生活的装饰。",
+        reflection: "行动应接受知识与事实的检验，知识也要在实践中修正。真正重要的不是“只做”或“只学”，而是让二者循环。"
+      }
+    ];
+
+    const quiz = [
+      { q: "“见未真，勿轻言；知未的，勿轻传”放在今天，最接近哪种做法？", options: ["看到热搜立即转发", "只转发朋友发来的消息", "核实来源并区分事实与猜测", "避免表达任何观点"], answer: 2, note: "它强调对言语和传播负责，不是要求沉默，而是先核实、再表达。" },
+      { q: "现代语境下，怎样理解“父母命，行勿懒”更合适？", options: ["父母的要求一律服从", "合理的请求及时回应，不合理要求可以沟通或拒绝", "成年后不必回应父母", "只要不被发现就可以拖延"], answer: 1, note: "尊重不等于盲从；现代关系还重视边界、安全和双方的合法权益。" },
+      { q: "成年人阅读《弟子规》最合适的态度是？", options: ["全部照做", "因为古老所以全部否定", "理解历史语境，吸收价值并辨析局限", "只背原文，不讨论含义"], answer: 2, note: "理解、辨析和形成自己的判断，比机械接受或机械否定更有学习价值。" }
+    ];
+
+    let activeLesson = 0;
+    let quizIndex = 0;
+    const storageKey = "dizigui-jindu-completed";
+    let completed = new Set(JSON.parse(localStorage.getItem(storageKey) || "[]"));
+
+    const $ = (id) => document.getElementById(id);
+
+    function updateProgress() {
+      const count = completed.size;
+      $("progressText").textContent = `${count} / ${lessons.length}`;
+      $("progressBar").style.width = `${count / lessons.length * 100}%`;
+    }
+
+    function renderNav() {
+      $("lessonNav").innerHTML = lessons.map((item, i) => `
+        <button class="lesson-tab ${i === activeLesson ? "active" : ""}" role="tab" aria-selected="${i === activeLesson}" data-index="${i}">
+          ${String(i + 1).padStart(2, "0")} · ${item.title}
+        </button>`).join("");
+      document.querySelectorAll(".lesson-tab").forEach(btn => btn.addEventListener("click", () => {
+        activeLesson = Number(btn.dataset.index); renderLesson();
+      }));
+    }
+
+    function renderLesson() {
+      const item = lessons[activeLesson];
+      renderNav();
+      $("lessonChapter").textContent = `${item.chapter} · 第 ${activeLesson + 1} 课`;
+      $("lessonTime").textContent = item.time;
+      $("lessonOriginal").textContent = item.original;
+      $("lessonPinyin").textContent = item.pinyin;
+      $("lessonModern").textContent = item.modern;
+      $("lessonContext").textContent = item.context;
+      $("lessonReflection").textContent = item.reflection;
+      const done = completed.has(activeLesson);
+      $("completeStatus").textContent = done ? "✓ 这一课已经读过" : "读完后标记，积累你的进度";
+      $("completeBtn").textContent = done ? "取消已读" : "标记为已读";
+    }
+
+    $("completeBtn").addEventListener("click", () => {
+      completed.has(activeLesson) ? completed.delete(activeLesson) : completed.add(activeLesson);
+      localStorage.setItem(storageKey, JSON.stringify([...completed]));
+      updateProgress(); renderLesson();
+    });
+
+    function addMessage(text, type) {
+      const el = document.createElement("div");
+      el.className = `message ${type}`;
+      el.textContent = text;
+      $("messages").appendChild(el);
+      $("messages").scrollTop = $("messages").scrollHeight;
+      return el;
+    }
+
+    const chatHistory = [];
+    let chatBusy = false;
+
+    async function checkAIStatus() {
+      try {
+        const response = await fetch("/api/status");
+        const data = await response.json();
+        $("aiStatus").textContent = data.configured ? `大模型已连接 · ${data.model}` : "尚未连接大模型";
+        $("aiStatus").classList.toggle("ready", Boolean(data.configured));
+        $("aiSettings").open = !data.configured;
+      } catch {
+        $("aiStatus").textContent = "请通过本机启动服务打开此页面";
+        $("aiSettings").open = true;
+      }
+    }
+
+    async function submitQuestion(question) {
+      const clean = question.trim();
+      if (!clean || chatBusy) return;
+      $("chatError").textContent = "";
+      addMessage(clean, "user");
+      const pending = addMessage("正在结合当前课程思考...", "bot pending");
+      chatBusy = true;
+      document.querySelector(".send").disabled = true;
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            question: clean,
+            lesson: lessons[activeLesson],
+            history: chatHistory.slice(-8)
+          })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || "大模型暂时无法回答");
+        pending.remove();
+        addMessage(data.answer, "bot");
+        chatHistory.push({ role: "user", content: clean }, { role: "assistant", content: data.answer });
+      } catch (error) {
+        pending.remove();
+        $("chatError").textContent = error.message || "大模型暂时无法回答";
+      } finally {
+        chatBusy = false;
+        document.querySelector(".send").disabled = false;
+      }
+    }
+
+    $("chatForm").addEventListener("submit", event => {
+      event.preventDefault();
+      void submitQuestion($("chatInput").value);
+      $("chatInput").value = "";
+    });
+    document.querySelectorAll(".chip").forEach(chip => chip.addEventListener("click", () => void submitQuestion(chip.dataset.question)));
+
+    $("aiConfigForm").addEventListener("submit", async event => {
+      event.preventDefault();
+      const button = event.currentTarget.querySelector("button");
+      button.disabled = true;
+      button.textContent = "正在测试...";
+      $("chatError").textContent = "";
+      try {
+        const response = await fetch("/api/configure", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            apiKey: $("apiKey").value,
+            baseUrl: $("baseUrl").value,
+            model: $("modelName").value
+          })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || "连接测试失败");
+        $("apiKey").value = "";
+        $("aiSettings").open = false;
+        await checkAIStatus();
+      } catch (error) {
+        $("chatError").textContent = error.message || "连接测试失败";
+      } finally {
+        button.disabled = false;
+        button.textContent = "保存并测试连接";
+      }
+    });
+
+    function renderQuiz() {
+      const item = quiz[quizIndex];
+      $("quizCount").textContent = `第 ${quizIndex + 1} / ${quiz.length} 题`;
+      $("quizQuestion").textContent = item.q;
+      $("quizFeedback").textContent = "";
+      $("nextQuiz").style.display = "none";
+      $("quizOptions").innerHTML = item.options.map((option, i) => `<button class="option" data-index="${i}">${option}</button>`).join("");
+      document.querySelectorAll(".option").forEach(btn => btn.addEventListener("click", () => chooseAnswer(btn, item)));
+    }
+
+    function chooseAnswer(btn, item) {
+      const buttons = [...document.querySelectorAll(".option")];
+      if (buttons.some(b => b.disabled)) return;
+      buttons.forEach(b => b.disabled = true);
+      const selected = Number(btn.dataset.index);
+      btn.classList.add(selected === item.answer ? "correct" : "wrong");
+      buttons[item.answer].classList.add("correct");
+      $("quizFeedback").textContent = `${selected === item.answer ? "答对了。" : "再想一步。"}${item.note}`;
+      $("nextQuiz").textContent = quizIndex === quiz.length - 1 ? "重新练习" : "下一题";
+      $("nextQuiz").style.display = "inline-block";
+    }
+
+    $("nextQuiz").addEventListener("click", () => { quizIndex = (quizIndex + 1) % quiz.length; renderQuiz(); });
+
+    updateProgress(); renderLesson(); renderQuiz(); checkAIStatus();
+  </script>
+</body>
+</html>
