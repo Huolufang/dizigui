@@ -1,0 +1,14 @@
+.display { white-space: pre-line; font-size: 62rpx; }
+.tabs { margin: 40rpx 0 24rpx; display: flex; gap: 12rpx; overflow-x: auto; }
+.tab { flex: none; padding: 18rpx 24rpx; border-radius: 999rpx; background: var(--paper); color: var(--muted); font-size: 24rpx; }
+.tab.active { background: var(--ink); color: #fff; }
+.practice { min-height: 560rpx; }
+.hidden-copy { margin: 90rpx 20rpx; color: #555348; text-align: center; }
+.verse { min-height: 220rpx; margin: 60rpx 10rpx 20rpx; font-size: 48rpx; line-height: 1.8; text-align: center; }
+.hint { color: var(--muted); }
+.reveal-row { display: flex; gap: 14rpx; justify-content: center; }
+.ratings { margin-top: 36rpx; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10rpx; }
+.ratings button { padding: 20rpx 6rpx; border-radius: 20rpx; background: #fff; color: var(--ink); line-height: 1.35; }
+.ratings .rating-name, .ratings text { display: block; }.ratings .rating-name { color: var(--ink); font-size: 25rpx; font-weight: 650; }.ratings text { color: var(--muted); font-size: 20rpx; }
+.unit-row { min-height: 180rpx; display: flex; align-items: center; justify-content: space-between; gap: 20rpx; }
+.unit-text { margin: 12rpx 0; font-size: 32rpx; line-height: 1.6; }

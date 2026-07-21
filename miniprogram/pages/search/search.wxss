@@ -1,0 +1,6 @@
+.display { white-space: pre-line; font-size: 62rpx; }
+.search-box { margin-top: 34rpx; padding: 10rpx; border-radius: 999rpx; background: var(--paper); display: flex; align-items: center; }.search-box input { flex: 1; height: 76rpx; padding-left: 22rpx; font-size: 27rpx; }.search-box button { width: 150rpx; border-radius: 999rpx; background: var(--ink); color: #fff; font-size: 25rpx; }
+.recent-row { min-height: 90rpx; border-bottom: 1rpx solid var(--line); display: flex; align-items: center; justify-content: space-between; }
+.summary { margin: 30rpx 4rpx; }
+.result { padding: 28rpx; }.result .h2 { margin-bottom: 14rpx; }.snippet { color: #56554f; font-size: 26rpx; line-height: 1.7; }.hit { padding: 0 3rpx; background: var(--lime); color: var(--ink); }
+.more { margin: 20rpx auto; background: transparent; color: var(--muted); font-size: 24rpx; text-decoration: underline; }

@@ -1,0 +1,12 @@
+<view class="page">
+  <text class="eyebrow">来源先于包装</text>
+  <view class="display">每一段内容，\n都应该能回到来处。</view>
+  <view class="status card card-pink"><text class="eyebrow">当前内容状态</text><view class="h1">课程待人工审核</view><view class="body">程序已完整内置 40 讲受控快照和 90 个原文单元。但规范原文异文裁决、底稿逐句引用、段落级讲稿映射、释义差异和必读重点仍需产品所有者确认。</view></view>
+  <view class="section-head"><text class="eyebrow">来源 SRC-V1</text></view>
+  <view class="source card"><view class="h2">弟子规学堂 v1.1.0 小程序数据</view><view class="meta"><text>内容类型</text><text>旧版输入快照</text><text>用途</text><text>原文对照、40 讲正文和课程候选分组</text><text>版本状态</text><text>用户提供的 v1.1.0</text></view><view class="toast-note">40 讲正文尚未记录原始出版物、网页或整理版本信息，程序不虚构其来源。</view></view>
+  <view class="section-head"><text class="eyebrow">来源 SRC-NOTES</text></view>
+  <view class="source card"><view class="h2">《弟子规》题解·注释·译文（学习整理版）</view><view class="meta"><text>内容类型</text><text>公开学习资料整理版</text><text>用途</text><text>字词注释与基础译文底稿</text><text>版本状态</text><text>非权威定本，不视为蔡老师观点</text></view></view>
+  <view class="section-head"><text class="eyebrow">数据完整性</text></view>
+  <view class="card checks"><view><text>内置讲次</text><text class="check-value">40 / 40</text></view><view><text>讲稿展示段落</text><text class="check-value">1477</text></view><view><text>课程候选</text><text class="check-value">18</text></view><view><text>原文单元</text><text class="check-value">90</text></view></view>
+  <view class="small muted checksum">受控输入的文件大小与 SHA-256 校验值已登记在仓库 content/raw/sources.json。</view>
+</view>

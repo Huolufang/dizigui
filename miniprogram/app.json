@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/courses/courses",
+    "pages/lectures/lectures",
+    "pages/review/review",
+    "pages/profile/profile",
+    "pages/course-detail/course-detail",
+    "pages/learn/learn",
+    "pages/lecture-reader/lecture-reader",
+    "pages/search/search",
+    "pages/reflections/reflections",
+    "pages/sources/sources"
+  ],
+  "window": {
+    "navigationBarTitleText": "弟子规学堂",
+    "navigationBarBackgroundColor": "#fbfaf6",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f2f0e9",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8a8880",
+    "selectedColor": "#11110f",
+    "backgroundColor": "#fbfaf6",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "学习" },
+      { "pagePath": "pages/courses/courses", "text": "课程" },
+      { "pagePath": "pages/lectures/lectures", "text": "讲稿" },
+      { "pagePath": "pages/review/review", "text": "复习" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

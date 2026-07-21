@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-07-17",
+  "environment": "Codex bundled Node.js on macOS; not a WeChat real-device result",
+  "contentVersion": "2.0-preview",
+  "packageSizeApprox": "1.3M",
+  "structure": {
+    "pages": 11,
+    "courses": 18,
+    "units": 90,
+    "lectures": 40,
+    "paragraphs": 1477,
+    "javascriptSyntax": "passed",
+    "pageFilesPresent": "passed",
+    "networkDependenciesDetected": 0
+  },
+  "coreStateTests": "passed",
+  "searchQueries": [
+    { "query": "父母呼", "group": "original", "elapsedMs": 37, "count": 1 },
+    { "query": "出必告", "group": "original", "elapsedMs": 20, "count": 1 },
+    { "query": "凡是人", "group": "original", "elapsedMs": 15, "count": 1 },
+    { "query": "勿畏难", "group": "original", "elapsedMs": 13, "count": 1 },
+    { "query": "学文", "group": "original", "elapsedMs": 15, "count": 3 },
+    { "query": "幸福人生", "group": "lecture", "elapsedMs": 14, "count": 2 },
+    { "query": "身教", "group": "lecture", "elapsedMs": 13, "count": 12 },
+    { "query": "冬温夏凊", "group": "lecture", "elapsedMs": 24, "count": 3 },
+    { "query": "信用", "group": "lecture", "elapsedMs": 17, "count": 19 },
+    { "query": "孔融让梨", "group": "lecture", "elapsedMs": 17, "count": 1 }
+  ],
+  "contentValidation": {
+    "codeIntegrityPassed": true,
+    "releaseReady": false,
+    "errors": 0,
+    "pendingHumanReviewItems": 108,
+    "note": "18 门课程和 90 个原文单元仍需按 PRD 完成内容审核与释义差异比较。"
+  }
+}

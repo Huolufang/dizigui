@@ -1,0 +1,13 @@
+<view wx:if="{{lecture}}" class="reader {{fontClass}}">
+  <view class="reader-head">
+    <text class="eyebrow">蔡礼旭老师 · 完整讲稿</text>
+    <view class="display">第 {{lecture.number}} 讲</view>
+    <view class="body muted">当前文本来自 v1.1.0 受控快照，尚未记录原始出版物、网页或整理版本。</view>
+    <view class="reader-actions"><button class="pill pill-small" bindtap="toggleRead">{{status === 'read' ? '取消讲稿已读' : '标记讲稿已读'}}</button><button class="pill pill-small pill-outline" bindtap="openSearch">讲稿内查找</button></view>
+  </view>
+  <view class="source-bar between"><text>展示版：未校订快照</text><text>{{lecture.paragraphs.length}} 段 · {{statusLabel}}</text></view>
+  <view class="article">
+    <view wx:for="{{lecture.paragraphs}}" wx:key="index" id="paragraph-{{index}}" data-index="{{index}}" class="paragraph"><text class="anchor">{{index + 1}}</text><text>{{item}}</text></view>
+  </view>
+  <view class="end-mark"><text>第 {{lecture.number}} 讲 · 全文完</text><view>◆</view><text>阅读到底不会自动标记已读</text></view>
+</view>

@@ -1,0 +1,35 @@
+<view class="page home">
+  <view class="hero">
+    <view class="display">读一句经典，\n懂一分<text class="mark">理</text>。</view>
+  </view>
+
+  <view wx:if="{{active}}" class="card card-lilac focus-card">
+    <view class="between"><text class="eyebrow">上次学习 · 第 {{active.course.order}} 课</text><text class="step-status">当前环节：{{active.stepLabel}}</text></view>
+    <view class="h1">{{active.course.chapter}}</view>
+    <view class="course-original serif">{{active.course.units[0].text}}</view>
+    <view class="progress"><view style="width: {{active.completedSteps.length * 20}}%"></view></view>
+    <button class="pill" bindtap="continueLearning">从上次位置继续 →</button>
+  </view>
+
+  <view wx:else class="card card-lilac focus-card">
+    <view class="between"><text class="eyebrow">今日课程</text><text class="tag">约 {{next.estimate}} 分钟</text></view>
+    <view class="h1">{{next.chapter}}</view>
+    <view class="course-summary">{{next.title}}</view>
+    <view class="serif original-preview">{{next.units[0].text}}</view>
+    <button class="pill" bindtap="startSuggested">{{completedCount ? '开始这一课' : '开始系统学习'}} →</button>
+  </view>
+
+  <view wx:if="{{dueCount}}" class="card card-pink priority" bindtap="goReview">
+    <view class="between"><text class="eyebrow">今天到期</text><text class="tag">优先建议</text></view>
+    <view class="big-number">{{dueCount}}</view>
+    <view class="between"><text class="body">个原文单元等待口头复习</text><text class="arrow">↗</text></view>
+  </view>
+
+  <view wx:if="{{recentReading}}" class="card link-row" bindtap="openRecent"><view class="recent-copy"><text class="eyebrow">最近阅读</text><view class="h2">{{recentReading.title}}</view><view class="recent-reading-position">{{recentReading.subtitle}}</view></view><text class="arrow">↗</text></view>
+
+  <view class="section-head between"><view><text class="eyebrow">总体记录</text><view class="h2">{{completedCount}} / {{total}} 课已完成</view></view><text class="percentage">{{progress}}%</text></view>
+  <view class="progress"><view style="width: {{progress}}%"></view></view>
+
+  <view class="card link-row" bindtap="goCourses"><view><text class="eyebrow">全部内容始终可查阅</text><view class="h2">浏览 18 门系统课程</view></view><text class="arrow">→</text></view>
+  <view class="safe-bottom"></view>
+</view>

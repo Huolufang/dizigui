@@ -1,0 +1,9 @@
+.display { white-space: pre-line; font-size: 62rpx; }
+.search-entry { margin: 38rpx 0 24rpx; padding: 26rpx 30rpx; border-radius: 999rpx; background: var(--ink); color: #fff; }
+.summary { margin: 34rpx 4rpx 8rpx; color: var(--muted); font-size: 23rpx; }
+.lecture-list { padding-top: 4rpx; padding-bottom: 4rpx; }
+.lecture-row { min-height: 130rpx; border-bottom: 1rpx solid var(--line); display: flex; align-items: center; gap: 24rpx; }
+.lecture-row:last-child { border: 0; }
+.number { width: 68rpx; font-size: 36rpx; font-weight: 300; }
+.lecture-copy { flex: 1; }
+.lecture-copy .h2 { font-size: 29rpx; }

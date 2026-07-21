@@ -1,0 +1,10 @@
+.reader { min-height: 100vh; background: #fbfaf6; }
+.reader-head { padding: 54rpx 34rpx 42rpx; background: var(--cream); }
+.reader-head .display { font-size: 72rpx; }
+.reader-actions { margin-top: 34rpx; display: flex; gap: 12rpx; }
+.source-bar { position: sticky; top: 0; z-index: 5; padding: 20rpx 28rpx; border-bottom: 1rpx solid var(--line); background: rgba(251,250,246,.96); color: var(--muted); font-size: 21rpx; }
+.article { max-width: 700rpx; margin: 0 auto; padding: 48rpx 34rpx; }
+.paragraph { position: relative; margin-bottom: 36rpx; color: #252520; text-align: justify; }
+.anchor { position: absolute; left: -28rpx; top: 7rpx; color: #aaa79e; font-size: 17rpx; }
+.font-small .paragraph { font-size: 29rpx; line-height: 1.9; }.font-medium .paragraph { font-size: 33rpx; line-height: 2; }.font-large .paragraph { font-size: 38rpx; line-height: 2.05; }
+.end-mark { padding: 60rpx 30rpx 100rpx; color: var(--muted); text-align: center; font-size: 22rpx; line-height: 2.4; }

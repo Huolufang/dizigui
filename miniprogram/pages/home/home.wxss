@@ -1,0 +1,18 @@
+.home { padding-top: 48rpx; }
+.hero { padding: 18rpx 8rpx 36rpx; }
+.hero .display { white-space: pre-line; }
+.hero-copy { max-width: 640rpx; margin-top: 28rpx; }
+.mark { position: relative; padding: 0 7rpx; background: linear-gradient(transparent 60%, var(--lime) 60%); }
+.priority { min-height: 270rpx; }
+.big-number { margin: 20rpx 0 4rpx; font-size: 96rpx; font-weight: 300; line-height: 1; }
+.focus-card { min-height: 430rpx; display: flex; flex-direction: column; }
+.step-status { margin-left: 24rpx; color: #5f5c55; font-size: 23rpx; font-weight: 600; line-height: 1.4; text-align: right; }
+.focus-card .h1 { margin: 48rpx 0 8rpx; font-size: 62rpx; }
+.course-summary { margin-bottom: 22rpx; color: #45443f; font-size: 27rpx; font-weight: 600; line-height: 1.5; }
+.course-original { margin-bottom: 22rpx; color: #34342f; font-size: 34rpx; line-height: 1.65; }
+.focus-card .pill { margin-top: auto; }
+.original-preview { margin: 8rpx 0 34rpx; font-size: 34rpx; line-height: 1.7; }
+.percentage { font-size: 58rpx; font-weight: 300; }
+.section-head + .progress { margin: 20rpx 4rpx 40rpx; }
+.recent-copy { flex: 1; min-width: 0; }
+.recent-reading-position { margin-top: 12rpx; color: #6f6d66; font-size: 26rpx; line-height: 1.55; }

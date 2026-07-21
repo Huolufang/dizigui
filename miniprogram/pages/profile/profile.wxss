@@ -1,0 +1,14 @@
+.display { white-space: pre-line; font-size: 62rpx; }
+.stats { margin-top: 36rpx; display: grid; grid-template-columns: 1fr 1fr; gap: 14rpx; }
+.stat { min-height: 210rpx; padding: 26rpx; border-radius: 24rpx; display: flex; flex-direction: column; justify-content: space-between; }
+.stat-wide { grid-column: 1 / -1; min-height: 170rpx; }
+.stat-number { font-size: 66rpx; font-weight: 300; }.stat-total { font-size: 25rpx; }.stat > text:last-child { font-size: 23rpx; }
+.rating-facts { margin-top: 28rpx; display: grid; grid-template-columns: repeat(3, 1fr); }
+.rating-facts view { border-right: 1rpx solid var(--line); text-align: center; }.rating-facts view:last-child { border: 0; }
+.rating-facts .rating-number, .rating-facts text { display: block; }.rating-facts .rating-number { color: var(--ink); font-size: 48rpx; font-weight: 350; }.rating-facts text { color: var(--muted); font-size: 22rpx; }
+.font-options { margin-top: 26rpx; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12rpx; }
+.font-options button { border-radius: 999rpx; background: var(--ground); color: var(--ink); }.font-options button.selected { background: var(--ink); color: #fff; }
+.menu { padding-top: 4rpx; padding-bottom: 4rpx; }
+.backup-actions { margin-top: 24rpx; display: grid; gap: 14rpx; }
+.danger { color: #a42f28; display: flex; justify-content: space-between; align-items: center; }
+.version { padding: 42rpx 10rpx; text-align: center; line-height: 1.8; white-space: pre-line; }

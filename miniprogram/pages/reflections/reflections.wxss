@@ -1,0 +1,3 @@
+.display { white-space: pre-line; font-size: 62rpx; }
+.reflection-text { margin: 30rpx 0; white-space: pre-wrap; }
+.actions { padding-top: 18rpx; border-top: 1rpx solid var(--line); display: flex; gap: 12rpx; }.actions button { flex: 1; border-radius: 999rpx; background: var(--ground); color: var(--ink); font-size: 24rpx; }.actions .delete { color: #a42f28; }

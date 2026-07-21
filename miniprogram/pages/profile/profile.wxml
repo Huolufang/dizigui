@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="display">只记录做过的，\n不猜测能力。</view>
+  <view class="stats">
+    <view class="stat stat-wide card-lime"><text class="stat-number">{{completed}}<text class="stat-total">/18</text></text><text>已完成课程</text></view>
+    <view class="stat card-lilac"><text class="stat-number">{{read}}<text class="stat-total">/40</text></text><text>《细讲弟子规》讲稿已读</text></view>
+    <view class="stat card-cream"><text class="stat-number">{{reflections}}</text><text>反思记录</text></view>
+  </view>
+  <view class="card">
+    <text class="eyebrow">背诵自评现状</text>
+    <view class="rating-facts"><view><text class="rating-number">{{ratingStats.fluent}}</text><text>熟练</text></view><view><text class="rating-number">{{ratingStats.fuzzy}}</text><text>模糊</text></view><view><text class="rating-number">{{ratingStats.review}}</text><text>待复习</text></view></view>
+  </view>
+  <view class="card">
+    <text class="eyebrow">正文字号</text>
+    <view class="font-options"><button class="{{fontSize === 'small' ? 'selected' : ''}}" data-size="small" bindtap="setFont">小</button><button class="{{fontSize === 'medium' ? 'selected' : ''}}" data-size="medium" bindtap="setFont">中</button><button class="{{fontSize === 'large' ? 'selected' : ''}}" data-size="large" bindtap="setFont">大</button></view>
+  </view>
+  <view class="card menu">
+    <view class="link-row" bindtap="openReflections"><text>我的反思</text><text class="arrow">→</text></view>
+  </view>
+  <view class="section-head"><text class="eyebrow">数据安全</text><view class="h2">手动备份与恢复</view></view>
+  <view class="toast-note">学习数据只保存在本机。清除小程序数据或更换设备可能导致记录丢失，请定期导出备份。</view>
+  <view class="backup-actions"><button class="pill" bindtap="exportBackup">导出学习备份</button><button class="pill pill-outline" bindtap="importBackup">从 JSON 备份恢复</button></view>
+  <view class="card danger" bindtap="resetAll"><view><view class="h2">重置全部学习数据</view><text class="small muted">需要两次确认</text></view><text class="arrow">→</text></view>
+  <view class="small muted version">内容版本 2.0 · 学习状态 2.0\n最近保存：{{lastTime}}</view>
+</view>

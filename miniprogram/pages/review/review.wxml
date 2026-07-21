@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="display">想起来，\n比重新读更重要。</view>
+  <view class="tabs">
+    <view class="tab {{tab === 'due' ? 'active' : ''}}" data-tab="due" bindtap="switchTab">今天到期 {{due.length}}</view>
+    <view class="tab {{tab === 'upcoming' ? 'active' : ''}}" data-tab="upcoming" bindtap="switchTab">即将到期</view>
+    <view class="tab {{tab === 'all' ? 'active' : ''}}" data-tab="all" bindtap="switchTab">全部</view>
+  </view>
+
+  <view wx:if="{{current}}" class="practice card card-lime">
+    <view class="between"><text class="eyebrow">口头背诵</text><text class="tag">{{current.courseTitle}}</text></view>
+    <view wx:if="{{reveal === 'hidden'}}" class="hidden-copy">请先不看原文，尝试完整说出来</view>
+    <view wx:elif="{{reveal === 'hint'}}" class="serif verse hint">{{current.hint}}</view>
+    <view wx:else class="serif verse">{{current.text}}</view>
+    <view class="reveal-row">
+      <button class="pill pill-small pill-outline" data-mode="hint" bindtap="setReveal">关键词提示</button>
+      <button class="pill pill-small" data-mode="full" bindtap="setReveal">显示全文对照</button>
+    </view>
+    <view wx:if="{{reveal === 'full'}}" class="ratings">
+      <button data-rating="review" bindtap="rate"><text class="rating-name">待复习</text><text>明天</text></button>
+      <button data-rating="fuzzy" bindtap="rate"><text class="rating-name">模糊</text><text>3 天后</text></button>
+      <button data-rating="fluent" bindtap="rate"><text class="rating-name">熟练</text><text>7 天后</text></button>
+    </view>
+  </view>
+
+  <block wx:if="{{!current}}">
+    <view wx:if="{{tab === 'due' && !due.length}}" class="empty card"><view class="h1">当前没有到期复习</view><view class="body muted">可以到“全部”中自由选择原文练习。</view></view>
+    <view wx:for="{{tab === 'due' ? due : tab === 'upcoming' ? upcoming : all}}" wx:key="id" class="unit-row card" data-id="{{item.id}}" bindtap="practice">
+      <view><text class="eyebrow">{{item.courseTitle}}</text><view class="serif unit-text">{{item.text}}</view><text class="small muted" wx:if="{{item.latest}}">{{tab === 'all' ? item.ratingLabel + ' · ' : ''}}下次 {{item.latest.dueDate}}</text><text class="small muted" wx:else>尚未评级</text></view><text class="arrow">↗</text>
+    </view>
+  </block>
+</view>

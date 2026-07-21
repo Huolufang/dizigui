@@ -1,0 +1,44 @@
+{
+  "status": "confirmed",
+  "confirmedBy": "产品所有者（对话确认）",
+  "confirmedAt": "2026-07-18",
+  "basis": "用户回复“按推荐方案确认”",
+  "acceptSemanticProposals": true,
+  "confirmAllCourses": true,
+  "confirmAllPronunciations": true,
+  "variantDecisions": {
+    "DZG-CD-010": {
+      "canonicalText": "进必趋，退必迟；问起对，视勿移。",
+      "reason": "采用注释译文底稿用字；讲稿中的“近”保留为来源转写差异。"
+    },
+    "DZG-JIN-017": {
+      "canonicalText": "借人物，及时还；后有急，借不难。",
+      "reason": "采用课程与讲稿快照一致的版本，保持课程解释链完整。"
+    }
+  },
+  "unitStatusOverrides": {
+    "DZG-RX-007": {
+      "comparisonStatus": "no-difference",
+      "note": "课程讲稿范围扩展到第12讲，以覆盖“亲所恶，谨为去”的直接解释。"
+    },
+    "DZG-RX-011": {
+      "comparisonStatus": "not-applicable",
+      "note": "“挞无怨”暂未找到直接讲稿及现代适用边界；保留原文与安全边界，不补写讲稿解释。"
+    },
+    "DZG-JIN-008": {
+      "comparisonStatus": "not-applicable",
+      "note": "“步从容”暂未找到独立直接讲稿；保留原文，不补写讲稿解释。"
+    },
+    "DZG-JIN-012": {
+      "comparisonStatus": "not-applicable",
+      "note": "“勿轻略”暂未找到直接讲稿；保留原文，不补写讲稿解释。"
+    }
+  },
+  "contentOverrides": {
+    "DZG-JIN-017": {
+      "annotation": "借人物：借用别人的物品。及时还：按约定及时归还。后有急：以后遇到急需。借不难：再次借用时较容易得到帮助。",
+      "translation": "借用别人的物品，要按约定及时归还；以后自己遇到急需，再向别人借用时，就比较容易得到帮助。",
+      "pronunciation": ""
+    }
+  }
+}

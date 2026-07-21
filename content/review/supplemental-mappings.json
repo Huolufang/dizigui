@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-07-18",
+  "reviewKind": "targeted-supplemental-mapping-pre-review",
+  "authority": "proposal-only-not-product-owner-confirmation",
+  "sourceScope": "current needs-better-paragraph units and their relatedLectures",
+  "mappings": [
+    {
+      "unitId": "DZG-ZX-001",
+      "paragraphIds": [
+        "LECTURE-06-P-0001",
+        "LECTURE-06-P-0003",
+        "LECTURE-06-P-0005",
+        "LECTURE-06-P-0021",
+        "LECTURE-06-P-0022"
+      ],
+      "outcome": "resolved",
+      "rationale": "第6讲连续解释弟子、规、圣人训、首孝弟、谨与信，足以与底稿逐项比较。"
+    },
+    {
+      "unitId": "DZG-ZX-002",
+      "paragraphIds": [
+        "LECTURE-06-P-0024",
+        "LECTURE-06-P-0025",
+        "LECTURE-06-P-0026",
+        "LECTURE-06-P-0028"
+      ],
+      "outcome": "resolved",
+      "rationale": "第6讲分别解释泛爱众、亲仁和余力学文，补齐主候选未覆盖的分句。"
+    },
+    {
+      "unitId": "DZG-RX-003",
+      "paragraphIds": [
+        "LECTURE-06-P-0009",
+        "LECTURE-08-P-0020"
+      ],
+      "outcome": "resolved",
+      "rationale": "第6讲用周文王晨昏定省解释早晚问候，第8讲解释冬温夏凊，合并后覆盖全单元。"
+    },
+    {
+      "unitId": "DZG-RX-004",
+      "paragraphIds": [
+        "LECTURE-09-P-0014",
+        "LECTURE-09-P-0018",
+        "LECTURE-09-P-0020"
+      ],
+      "outcome": "resolved",
+      "rationale": "第9讲直接解释居有常、业无变，并把居解释为生活规律、业扩展为学业事业家业，可完成差异比较。"
+    },
+    {
+      "unitId": "DZG-RX-007",
+      "paragraphIds": [
+        "LECTURE-11-P-0038"
+      ],
+      "outcome": "no-direct-explanation-found",
+      "rationale": "当前相关讲次8—11只充分解释亲所好；亲所恶的直接解释位于范围外的第12讲，不能据此解决本课范围内的缺口。"
+    },
+    {
+      "unitId": "DZG-RX-009",
+      "paragraphIds": [
+        "LECTURE-13-P-0037",
+        "LECTURE-13-P-0038"
+      ],
+      "outcome": "resolved",
+      "rationale": "第13讲直接说明父母态度不佳时仍以正确态度和至诚孝心回应，覆盖亲憎我、孝方贤。"
+    },
+    {
+      "unitId": "DZG-RX-010",
+      "paragraphIds": [
+        "LECTURE-13-P-0058",
+        "LECTURE-13-P-0059",
+        "LECTURE-13-P-0060",
+        "LECTURE-13-P-0072",
+        "LECTURE-13-P-0073"
+      ],
+      "outcome": "resolved",
+      "rationale": "相邻拆分段合并后完整解释规劝本分、态度、时机、柔声和耐性，原先的截断问题可恢复。"
+    },
+    {
+      "unitId": "DZG-RX-011",
+      "paragraphIds": [
+        "LECTURE-13-P-0072",
+        "LECTURE-13-P-0073",
+        "LECTURE-14-P-0008"
+      ],
+      "outcome": "no-direct-explanation-found",
+      "rationale": "已找到悦复谏、反复耐心和号泣随的直接解释，但相关讲次没有解释挞无怨的含义或适用边界，仍不足以比较整单元。"
+    },
+    {
+      "unitId": "DZG-RX-014",
+      "paragraphIds": [
+        "LECTURE-15-P-0029",
+        "LECTURE-15-P-0031"
+      ],
+      "outcome": "resolved",
+      "rationale": "第15讲分别解释丧尽礼、祭尽诚与事死者如事生，覆盖此前缺失的前半句。"
+    },
+    {
+      "unitId": "DZG-CD-001",
+      "paragraphIds": [
+        "LECTURE-16-P-0013",
+        "LECTURE-16-P-0024",
+        "LECTURE-16-P-0036"
+      ],
+      "outcome": "resolved",
+      "rationale": "第16讲直接解释兄友弟恭，并说明兄弟和睦使父母放心，因此孝在其中。"
+    },
+    {
+      "unitId": "DZG-CD-002",
+      "paragraphIds": [
+        "LECTURE-16-P-0014",
+        "LECTURE-17-P-0007",
+        "LECTURE-17-P-0016"
+      ],
+      "outcome": "resolved",
+      "rationale": "相邻讲次分别解释轻财、言语忍和忿怒消解，不再只是过渡复诵。"
+    },
+    {
+      "unitId": "DZG-CD-005",
+      "paragraphIds": [
+        "LECTURE-18-P-0008",
+        "LECTURE-19-P-0013",
+        "LECTURE-19-P-0018"
+      ],
+      "outcome": "resolved",
+      "rationale": "第18至19讲直接解释勿见能的炫耀风险、才能目的和谦虚态度，补齐主候选后半句。"
+    },
+    {
+      "unitId": "DZG-CD-010",
+      "paragraphIds": [
+        "LECTURE-20-P-0010"
+      ],
+      "outcome": "resolved",
+      "rationale": "第20讲直接解释近必趋、退必迟；与原主候选的问起对、视勿移合并后可比较全单元，但进/近异文仍须单独裁决。"
+    },
+    {
+      "unitId": "DZG-JIN-008",
+      "paragraphIds": [
+        "LECTURE-23-P-0003",
+        "LECTURE-23-P-0008"
+      ],
+      "outcome": "no-direct-explanation-found",
+      "rationale": "相关讲次内可直接解释立端正和揖拜，但没有独立解释步从容；其他行走礼仪没有明确把同义表达关联到本句，不能替代该缺口。"
+    },
+    {
+      "unitId": "DZG-JIN-011",
+      "paragraphIds": [
+        "LECTURE-24-P-0008"
+      ],
+      "outcome": "resolved",
+      "rationale": "第24讲直接解释拿空器仍须如盛满般谨慎，与原主候选的慎独解释合并后覆盖全单元。"
+    },
+    {
+      "unitId": "DZG-JIN-012",
+      "paragraphIds": [
+        "LECTURE-23-P-0010",
+        "LECTURE-24-P-0021"
+      ],
+      "outcome": "no-direct-explanation-found",
+      "rationale": "相关讲次22—24能够解释不忙乱与勿畏难，但“勿轻略”只出现在原文罗列；第23讲的一般谨慎表述未明确关联该句，仍不足以完成整单元比较。"
+    },
+    {
+      "unitId": "DZG-JIN-013",
+      "paragraphIds": [
+        "LECTURE-25-P-0027",
+        "LECTURE-25-P-0031"
+      ],
+      "outcome": "resolved",
+      "rationale": "第25讲直接把斗闹场解释为复杂奢华、歌舞厅等不善环境，足以与底稿的打架嬉闹场合比较。"
+    },
+    {
+      "unitId": "DZG-XIN-003",
+      "paragraphIds": [
+        "LECTURE-29-P-0029",
+        "LECTURE-30-P-0004",
+        "LECTURE-30-P-0013"
+      ],
+      "outcome": "resolved",
+      "rationale": "第29至30讲直接解释奸巧语为掩盖失信的欺骗机巧，并说明言谈应文雅、秽污词市井气须戒。"
+    },
+    {
+      "unitId": "DZG-XIN-014",
+      "paragraphIds": [
+        "LECTURE-33-P-0029"
+      ],
+      "outcome": "resolved",
+      "rationale": "第33讲直接解释无心之非并举例，与原主候选的有心非解释合并后覆盖错与恶。"
+    },
+    {
+      "unitId": "DZG-FAZ-004",
+      "paragraphIds": [
+        "LECTURE-35-P-0030"
+      ],
+      "outcome": "resolved",
+      "rationale": "第35讲直接解释人所能、勿轻訾为不轻视诋毁他人才华，并说明嫉妒后果。"
+    },
+    {
+      "unitId": "DZG-FAZ-005",
+      "paragraphIds": [
+        "LECTURE-35-P-0032",
+        "LECTURE-36-P-0015"
+      ],
+      "outcome": "resolved",
+      "rationale": "第35至36讲直接解释不谄富、不骄贫；与原主候选的故旧关系合并后覆盖全单元。"
+    },
+    {
+      "unitId": "DZG-FAZ-010",
+      "paragraphIds": [
+        "LECTURE-37-P-0011"
+      ],
+      "outcome": "resolved",
+      "rationale": "第37讲直接解释过不规、道两亏及规劝时机，与原主候选的善相劝合并后足以比较。"
+    },
+    {
+      "unitId": "DZG-QR-004",
+      "paragraphIds": [
+        "LECTURE-40-P-0008",
+        "LECTURE-40-P-0009",
+        "LECTURE-40-P-0010"
+      ],
+      "outcome": "resolved",
+      "rationale": "第40讲连续解释不亲仁会受不良朋友和环境影响，并说明应辨别、远离小人。"
+    },
+    {
+      "unitId": "DZG-XW-008",
+      "paragraphIds": [
+        "LECTURE-40-P-0034"
+      ],
+      "outcome": "resolved",
+      "rationale": "第40讲直接解释字不敬、心先病，与原主候选的墨磨偏解释合并后覆盖全单元。"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.heading .display { white-space: pre-line; font-size: 64rpx; }
+.search-entry { margin: 38rpx 0 24rpx; padding: 26rpx 30rpx; border-radius: 999rpx; background: var(--paper); color: var(--muted); }
+.summary { margin: 38rpx 4rpx 18rpx; color: var(--muted); font-size: 24rpx; }
+.course-card { min-height: 360rpx; margin-bottom: 20rpx; padding: 30rpx; border-radius: 28rpx; display: flex; flex-direction: column; }
+.color-lilac { background: var(--lilac); }.color-lime { background: var(--lime); }.color-cream { background: var(--cream); }.color-pink { background: var(--pink); }.color-mint { background: var(--mint); }.color-coral { background: var(--coral); }
+.course-card .h1 { margin: 38rpx 0 8rpx; font-size: 60rpx; }
+.course-summary { color: #45443f; font-size: 27rpx; font-weight: 600; line-height: 1.5; }
+.range { color: #3c3b37; font-size: 30rpx; line-height: 1.6; }
+.foot { margin-top: auto; }
+.status-completed { background: var(--ink); color: #fff; }

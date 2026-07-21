@@ -1,0 +1,25 @@
+.learn-page { min-height: 100vh; background: var(--ground); }
+.step-nav { position: sticky; top: 0; z-index: 10; background: rgba(251,250,246,.96); white-space: nowrap; }
+.step-nav-inner { padding: 20rpx 24rpx; display: inline-flex; gap: 12rpx; }
+.step-chip { padding: 14rpx 20rpx; border-radius: 999rpx; background: var(--ground); color: var(--muted); font-size: 23rpx; }.step-number { margin-right: 10rpx; font-weight: 650; }.step-chip.active { background: var(--ink); color: #fff; }.step-chip.done:not(.active) { background: var(--mint); color: var(--ink); }
+.content { padding: 34rpx 28rpx 80rpx; }
+.display { font-size: 62rpx; }
+.hidden-copy { margin: 100rpx 20rpx; color: var(--muted); text-align: center; }
+.practice { min-height: 520rpx; }
+.verse { min-height: 220rpx; margin: 60rpx 0 30rpx; font-size: 46rpx; line-height: 1.8; text-align: center; }
+.button-row { display: flex; justify-content: center; gap: 12rpx; }
+.ratings { margin-top: 28rpx; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10rpx; }.ratings button { padding: 22rpx 4rpx; border-radius: 18rpx; background: #fff; color: var(--ink); font-size: 25rpx; }.rating-delay { display: block; color: var(--muted); font-size: 19rpx; }
+.skip { margin: 28rpx auto; background: transparent; color: var(--muted); font-size: 25rpx; text-decoration: underline; }
+.text-unit .original { margin-top: 24rpx; font-size: 42rpx; line-height: 1.8; }.label { display: block; margin: 26rpx 0 10rpx; font-weight: 650; }
+.pronunciation { margin-top: 16rpx; padding: 16rpx 20rpx; border-radius: 16rpx; background: var(--ground); font-size: 24rpx; }
+.source-text { white-space: pre-line; }
+.lecture-list { padding-top: 8rpx; padding-bottom: 8rpx; }
+.complete-button { margin-top: 34rpx; }
+.recite-progress { padding-top: 26rpx; padding-bottom: 26rpx; }
+.progress-track { margin-top: 24rpx; display: flex; align-items: flex-start; gap: 8rpx; }
+.progress-item { flex: 1; min-width: 0; color: var(--muted); text-align: center; }.progress-item > text { display: block; margin-top: 9rpx; font-size: 18rpx; white-space: nowrap; }
+.progress-node { width: 58rpx; height: 58rpx; margin: 0 auto; border: 2rpx solid var(--line); border-radius: 50%; background: var(--ground); font-size: 24rpx; line-height: 54rpx; text-align: center; }.progress-item.current .progress-node { border-color: var(--ink); background: var(--ink); color: #fff; }.progress-item.current > text { color: var(--ink); font-weight: 650; }.progress-item.done .progress-node { border-color: #aac7ad; background: var(--mint); color: var(--ink); }
+.recite-action { width: 100%; margin-top: 30rpx; }
+.question { min-height: 320rpx; display: flex; flex-direction: column; justify-content: center; }.question .h1 { margin-top: 28rpx; }
+.reflection { margin-top: 24rpx; }
+.secondary-action { width: 100%; min-height: 84rpx; margin-top: 18rpx; border: 2rpx solid var(--ink); border-radius: 999rpx; background: transparent; color: var(--ink); font-size: 26rpx; line-height: 80rpx; }

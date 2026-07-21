@@ -1,0 +1,10 @@
+<view class="page">
+  <text class="eyebrow">按学习轮次保留</text>
+  <view class="display">每一次理解，\n都有自己的时间。</view>
+  <view wx:if="{{!reflections.length}}" class="empty card"><view class="h1">还没有反思记录</view><view class="body muted">在课程第五步可以写下理解，也可以仅标记“已思考”。</view></view>
+  <view wx:for="{{reflections}}" wx:key="id" class="reflection card">
+    <view class="between"><text class="eyebrow">{{item.courseTitle}}</text><text class="small muted">{{item.timeLabel}}</text></view>
+    <view class="body reflection-text">{{item.displayText}}</view>
+    <view class="actions"><button data-id="{{item.id}}" bindtap="edit">修改</button><button class="delete" data-id="{{item.id}}" bindtap="remove">删除</button></view>
+  </view>
+</view>

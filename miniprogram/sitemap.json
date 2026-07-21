@@ -1,0 +1,4 @@
+{
+  "desc": "个人离线学习工具",
+  "rules": [{ "action": "disallow", "page": "*" }]
+}

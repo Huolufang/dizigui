@@ -1,0 +1,65 @@
+<view wx:if="{{course && session}}" class="learn-page font-medium">
+  <scroll-view class="step-nav" scroll-x="{{true}}" enhanced="{{true}}" show-scrollbar="false">
+    <view class="step-nav-inner"><view wx:for="{{stepNav}}" wx:key="number" class="step-chip {{item.active ? 'active' : ''}} {{item.done ? 'done' : ''}}" data-step="{{item.number}}" bindtap="selectStep"><text class="step-number">{{item.numberLabel}}</text><text>{{item.title}}</text></view></view>
+  </scroll-view>
+  <view class="content">
+    <text class="eyebrow">课程 {{course.order}} · 第 {{step}} 步</text>
+    <view class="display">{{stepTitles[step - 1]}}</view>
+
+    <block wx:if="{{step === 1}}">
+      <view class="body muted">首次进入时已固定今日到期快照，本步期间不会自动加入新条目。</view>
+      <view wx:if="{{!reviewUnits.length}}" class="empty card"><view class="h1">当前没有到期复习</view><view class="body muted">确认后即可完成本步。</view><button class="pill" bindtap="finishReview">完成本步</button></view>
+      <view wx:elif="{{currentReview}}" class="practice card card-pink">
+        <text class="eyebrow">{{currentReview.courseTitle}}</text>
+        <view wx:if="{{reveal === 'hidden'}}" class="hidden-copy">请口头背诵，暂时不看原文</view><view wx:elif="{{reveal === 'hint'}}" class="serif verse">{{currentReview.hint}}</view><view wx:else class="serif verse">{{currentReview.text}}</view>
+        <view class="button-row"><button class="pill pill-small pill-outline" data-mode="hint" bindtap="setReveal">关键词</button><button class="pill pill-small" data-mode="full" bindtap="setReveal">对照原文</button></view>
+        <view wx:if="{{reveal === 'full'}}" class="ratings"><button data-rating="review" bindtap="rateReview">待复习<text class="rating-delay">明天</text></button><button data-rating="fuzzy" bindtap="rateReview">模糊<text class="rating-delay">3 天后</text></button><button data-rating="fluent" bindtap="rateReview">熟练<text class="rating-delay">7 天后</text></button></view>
+      </view>
+      <view wx:else class="empty card"><view class="h1">快照内条目已全部完成</view><button class="pill" bindtap="finishReview">完成本步</button></view>
+      <button wx:if="{{reviewUnits.length && currentReview}}" class="skip" bindtap="skipReview">本次跳过复习</button>
+    </block>
+
+    <block wx:elif="{{step === 2}}">
+      <view wx:for="{{course.units}}" wx:key="id" class="text-unit card">
+        <text class="eyebrow">原文单元 {{index + 1}}</text><view class="serif original">{{item.text}}</view>
+        <view wx:if="{{item.pronunciation}}" class="pronunciation">读音：{{item.pronunciation}}</view>
+        <view class="divider"></view><text class="label">注释</text><view class="body muted source-text">{{item.annotation}}</view><text class="label">基础译文</text><view class="body muted">{{item.translation}}</view>
+      </view>
+      <button class="pill complete-button" bindtap="completeCurrent">{{step2Label}} →</button>
+    </block>
+
+    <block wx:elif="{{step === 3}}">
+      <view class="toast-note">本课只保留完整讲次入口，点击后可阅读上下文，并继续上次的位置。</view>
+      <view class="card lecture-list"><view wx:for="{{course.relatedLectures}}" wx:key="*this" class="link-row" data-number="{{item}}" bindtap="openLecture"><view><text class="eyebrow">相关讲次候选</text><view class="h2">《细讲弟子规》第 {{item}} 讲</view></view><text class="arrow">↗</text></view></view>
+      <button class="pill complete-button" bindtap="completeCurrent">{{step3Label}} →</button>
+    </block>
+
+    <block wx:elif="{{step === 4}}">
+      <view class="body muted">本课全部原文会按顺序逐句进入练习。原文默认隐藏，每一句完成后再进入下一句。</view>
+      <view class="recite-progress card">
+        <text class="eyebrow">本课练习进度</text>
+        <view class="progress-track">
+          <view wx:for="{{reciteOverview}}" wx:key="id" class="progress-item {{item.current ? 'current' : ''}} {{item.done ? 'done' : ''}}">
+            <view class="progress-node">{{item.done ? '✓' : item.current ? '背' : '·'}}</view>
+            <text>{{item.stateLabel}}</text>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{reciteUnit}}" class="practice card card-lime">
+        <text class="eyebrow">逐句练习</text>
+        <view wx:if="{{reveal === 'hidden'}}" class="hidden-copy">请口头背诵，暂时不看原文</view><view wx:elif="{{reveal === 'hint'}}" class="serif verse">{{reciteUnit.hint}}</view><view wx:else class="serif verse">{{reciteUnit.text}}</view>
+        <view class="button-row"><button class="pill pill-small pill-outline" data-mode="hint" bindtap="setReveal">关键词</button><button class="pill pill-small" data-mode="full" bindtap="setReveal">显示本句对照</button></view>
+        <button class="pill recite-action" bindtap="nextRecite">{{nextReciteLabel}}</button>
+      </view>
+      <view wx:else class="empty card"><view class="h1">本课全文已完成背诵记录</view><button class="pill" bindtap="completeCurrent">进入理解反思 →</button></view>
+    </block>
+
+    <block wx:elif="{{step === 5}}">
+      <view class="question card card-cream"><text class="eyebrow">通用中性问题</text><view class="h1">{{course.question}}</view></view>
+      <textarea class="textarea reflection" value="{{reflection}}" placeholder="写下你的理解或生活思考……" maxlength="-1" bindinput="onReflectionInput"></textarea>
+      <view class="small muted">输入会自动保存，不限字数，不评分。每个学习轮次保留独立反思。</view>
+      <button class="pill complete-button" bindtap="finishReflection">保存并完成本步 →</button>
+      <button class="secondary-action" bindtap="thoughtOnly">不写文字，仅标记“已思考”</button>
+    </block>
+  </view>
+</view>

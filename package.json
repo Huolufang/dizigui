@@ -1,0 +1,10 @@
+{
+  "name": "dizigui-school-miniprogram",
+  "version": "2.0.0-preview",
+  "private": true,
+  "scripts": {
+    "test": "node tests/miniprogram-build.test.js && node tests/page-copy-experience.test.js && node tests/home-resume-experience.test.js && node tests/course-card-experience.test.js && node tests/learn-page-experience.test.js && node tests/core.test.js",
+    "validate:content": "node tools/validate-content.js",
+    "validate:content:strict": "node tools/validate-content.js --strict"
+  }
+}

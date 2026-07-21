@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-07-18",
+  "reviewKind": "ai-semantic-pre-review",
+  "authority": "proposal-only-not-product-owner-confirmation",
+  "sourceFile": "miniprogram/data/source-mappings.js",
+  "statusDefinitions": {
+    "no-difference": "预审未识别影响理解的语义差异，仍需产品所有者确认。",
+    "difference": "预审识别到关键字义、主旨、适用范围或行为结论差异。",
+    "not-applicable": "没有可用于比较的直接讲稿段落。",
+    "needs-better-paragraph": "当前主候选不足以完成语义比较，应先更换或补充段落。"
+  },
+  "proposals": [
+    {
+      "unitId": "DZG-ZX-001",
+      "primaryCandidateParagraphId": "LECTURE-08-P-0015",
+      "proposedStatus": "no-difference",
+      "rationale": "第6讲连续解释弟子、规、圣人训、首孝弟、谨与信；与底稿字义和总叙结构一致，未识别语义冲突。“悌/弟”继续作为纯转写标记。",
+      "confidence": "high",
+      "differenceType": "transcription-only",
+      "flags": [
+        {
+          "type": "transcription-only",
+          "note": "底稿与课程多作“首孝悌”，讲稿多作“首孝弟”；预审视为通行用字/转写差别，不单独构成释义差异。"
+        }
+      ]
+    },
+    {
+      "unitId": "DZG-ZX-002",
+      "primaryCandidateParagraphId": "LECTURE-06-P-0025",
+      "proposedStatus": "no-difference",
+      "rationale": "第6讲分别解释泛爱众、亲仁与余力学文；与底稿的关爱众人、亲近仁者和有余力学习义理一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-001",
+      "primaryCandidateParagraphId": "LECTURE-07-P-0007",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“父母呼”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-002",
+      "primaryCandidateParagraphId": "LECTURE-08-P-0015",
+      "proposedStatus": "difference",
+      "rationale": "底稿把“顺承”译为顺从接受；讲稿明确限定只有责备正确时才顺，并要求对错误要求辨别、择机规劝，行为结论不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-003",
+      "primaryCandidateParagraphId": "LECTURE-08-P-0020",
+      "proposedStatus": "no-difference",
+      "rationale": "第8讲解释冬温夏凊，第6讲以晨昏定省说明早晚观察、问候父母；与底稿照料和请安主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-004",
+      "primaryCandidateParagraphId": "LECTURE-09-P-0010",
+      "proposedStatus": "difference",
+      "rationale": "第9讲把“居有常”主要解释为生活有规律，并把“业”扩展到学业、事业、家业；底稿把“居有常”解释为固定居所，把“业无变”解释为职业或志向不轻改，关键字义范围不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-005",
+      "primaryCandidateParagraphId": "LECTURE-10-P-0007",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“事虽小”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-006",
+      "primaryCandidateParagraphId": "LECTURE-10-P-0026",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“物虽小”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-007",
+      "primaryCandidateParagraphId": "LECTURE-11-P-0039",
+      "proposedStatus": "needs-better-paragraph",
+      "rationale": "当前相关讲次8—11只充分解释“亲所好”；“亲所恶”的直接解释位于范围外的第12讲，仍缺本课范围内可比较的直接讲稿。",
+      "confidence": "high",
+      "differenceType": "candidate-quality",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-008",
+      "primaryCandidateParagraphId": "LECTURE-10-P-0014",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“身有伤”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-009",
+      "primaryCandidateParagraphId": "LECTURE-13-P-0056",
+      "proposedStatus": "no-difference",
+      "rationale": "第13讲直接说明父母态度不佳时仍保持正确态度与至诚孝心，并以故事说明转化家庭；与底稿“亲憎我仍尽孝”的主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-010",
+      "primaryCandidateParagraphId": "LECTURE-13-P-0058",
+      "proposedStatus": "no-difference",
+      "rationale": "将第13讲被机械拆开的相邻段合并后，能够完整解释规劝本分、存心、态度、时机、柔声和耐性；与底稿主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-011",
+      "primaryCandidateParagraphId": "LECTURE-13-P-0058",
+      "proposedStatus": "needs-better-paragraph",
+      "rationale": "定向检索找到悦复谏、反复耐心与号泣随的解释，但相关讲次仍没有直接解释“挞无怨”的含义或适用边界，不能完成整单元比较。",
+      "confidence": "high",
+      "differenceType": "candidate-quality",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-012",
+      "primaryCandidateParagraphId": "LECTURE-15-P-0014",
+      "proposedStatus": "difference",
+      "rationale": "底稿按字面要求尝药并昼夜不离；讲稿明确区分中药与西药，改以确认水温、危机处理等现代情境落实，行为结论有实质限定。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-013",
+      "primaryCandidateParagraphId": "LECTURE-15-P-0025",
+      "proposedStatus": "difference",
+      "rationale": "底稿呈现守丧三年、常悲咽、居处改变和禁绝酒肉等固定做法；讲稿强调三年是古礼、哀思不等于持续哭泣，并把重点转向内在感怀，行为要求的理解不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-RX-014",
+      "primaryCandidateParagraphId": "LECTURE-15-P-0031",
+      "proposedStatus": "no-difference",
+      "rationale": "第15讲分别解释丧尽礼、祭尽诚与事死者如事生，均强调礼敬、真诚、感恩和持续纪念，与底稿方向一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-001",
+      "primaryCandidateParagraphId": "LECTURE-16-P-0012",
+      "proposedStatus": "no-difference",
+      "rationale": "第16讲直接解释兄友弟恭，并说明兄弟和睦使父母放心，因此孝在其中；与底稿释义一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-002",
+      "primaryCandidateParagraphId": "LECTURE-17-P-0032",
+      "proposedStatus": "no-difference",
+      "rationale": "第16至17讲分别解释轻财减少争端、忍言避免忿怒及关系损害；与底稿的怨消忿泯主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-003",
+      "primaryCandidateParagraphId": "LECTURE-17-P-0038",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“或饮食”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-004",
+      "primaryCandidateParagraphId": "LECTURE-18-P-0038",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“长呼人”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-005",
+      "primaryCandidateParagraphId": "LECTURE-19-P-0010",
+      "proposedStatus": "no-difference",
+      "rationale": "第18至19讲解释尊长称谓、勿炫能、才能用途和谦虚态度；与底稿不直呼名、不卖弄才能的解释一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-006",
+      "primaryCandidateParagraphId": "LECTURE-19-P-0032",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“路遇长”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-007",
+      "primaryCandidateParagraphId": "LECTURE-19-P-0040",
+      "proposedStatus": "difference",
+      "rationale": "底稿按古礼解释为下马下车并等候百步；讲稿把重点转译为现代送客礼仪，直接行为结论不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-008",
+      "primaryCandidateParagraphId": "LECTURE-20-P-0027",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“长者立”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-009",
+      "primaryCandidateParagraphId": "LECTURE-20-P-0009",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“尊长前”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-CD-010",
+      "primaryCandidateParagraphId": "LECTURE-20-P-0009",
+      "proposedStatus": "no-difference",
+      "rationale": "第20讲直接解释见尊长快步上前、离开时缓退；与原主候选的起身应答、目光专注合并后语义方向与底稿一致，但“进/近”原文异文仍须裁决。",
+      "confidence": "high",
+      "differenceType": "source-text-variant",
+      "flags": [
+        {
+          "type": "source-text-variant",
+          "note": "公开底稿作“进必趋”，课程候选作“近必趋”；这是规范原文异文，不应被语义状态掩盖。"
+        }
+      ]
+    },
+    {
+      "unitId": "DZG-CD-011",
+      "primaryCandidateParagraphId": "LECTURE-20-P-0019",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“事诸父”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-001",
+      "primaryCandidateParagraphId": "LECTURE-21-P-0007",
+      "proposedStatus": "difference",
+      "rationale": "底稿直译“晚上迟睡”；讲稿强调规律生活和不睡懒觉，没有支持晚睡，且把主旨转为自制与惜时，需人工判断是否构成现代修正。",
+      "confidence": "medium",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-002",
+      "primaryCandidateParagraphId": "LECTURE-21-P-0023",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“晨必盥”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-003",
+      "primaryCandidateParagraphId": "LECTURE-21-P-0029",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“冠必正”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-004",
+      "primaryCandidateParagraphId": "LECTURE-22-P-0014",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“置冠服”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-005",
+      "primaryCandidateParagraphId": "LECTURE-22-P-0016",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“衣贵洁”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-006",
+      "primaryCandidateParagraphId": "LECTURE-22-P-0018",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“对饮食”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-007",
+      "primaryCandidateParagraphId": "LECTURE-22-P-0028",
+      "proposedStatus": "difference",
+      "rationale": "底稿表述年轻人绝不可饮酒；讲稿另列药用和严寒地区少量饮用例外，适用范围与行为结论不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-008",
+      "primaryCandidateParagraphId": "LECTURE-23-P-0008",
+      "proposedStatus": "needs-better-paragraph",
+      "rationale": "定向检索可补足立端正和揖拜，但相关讲次内仍没有独立解释“步从容”；其他行走礼仪未明确关联本句，不能替代。",
+      "confidence": "high",
+      "differenceType": "candidate-quality",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-009",
+      "primaryCandidateParagraphId": "LECTURE-23-P-0005",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“勿践阈”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-010",
+      "primaryCandidateParagraphId": "LECTURE-23-P-0016",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“缓揭帘”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-011",
+      "primaryCandidateParagraphId": "LECTURE-24-P-0009",
+      "proposedStatus": "no-difference",
+      "rationale": "第24讲相邻段分别解释执空器仍如盛满般谨慎，以及无人处仍保持慎独；与底稿主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-012",
+      "primaryCandidateParagraphId": "LECTURE-24-P-0016",
+      "proposedStatus": "needs-better-paragraph",
+      "rationale": "定向检索在相关讲次22—24内可解释不忙乱与勿畏难，但“勿轻略”仍只有原文罗列；一般谨慎表述未明确关联该句，不能替代直接解释。",
+      "confidence": "high",
+      "differenceType": "candidate-quality",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-013",
+      "primaryCandidateParagraphId": "LECTURE-26-P-0015",
+      "proposedStatus": "difference",
+      "rationale": "底稿把“斗闹场”解释为打架嬉闹场合；第25讲把它解释为复杂、奢华及歌舞厅等不善环境，关键字义和应远离的场所范围不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-014",
+      "primaryCandidateParagraphId": "LECTURE-24-P-0012",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“将入门”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-015",
+      "primaryCandidateParagraphId": "LECTURE-26-P-0032",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“人问谁”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-016",
+      "primaryCandidateParagraphId": "LECTURE-26-P-0033",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“用人物”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-JIN-017",
+      "primaryCandidateParagraphId": "LECTURE-26-P-0017",
+      "proposedStatus": "difference",
+      "rationale": "公开底稿后半句要求借出者不吝借物，课程候选及讲稿后半句说明及时归还后再借不难；主语、义务与行为结论均不同。当前主候选只有引文，裁决后仍需补解释段落。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": [
+        {
+          "type": "source-text-variant",
+          "note": "公开底稿后半句作“人借物，有勿悭”，课程候选及讲稿作“后有急，借不难”；这是整句异文。"
+        },
+        {
+          "type": "conditional-not-applicable",
+          "note": "若产品所有者采用“人借物，有勿悭”，该后半句在现有40讲中未找到直接解释，可对后半句建议 not-applicable；本条件不等于当前已确认。"
+        }
+      ]
+    },
+    {
+      "unitId": "DZG-XIN-001",
+      "primaryCandidateParagraphId": "LECTURE-29-P-0019",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“凡出言”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-002",
+      "primaryCandidateParagraphId": "LECTURE-29-P-0021",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“话说多”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-003",
+      "primaryCandidateParagraphId": "LECTURE-30-P-0015",
+      "proposedStatus": "no-difference",
+      "rationale": "第29至30讲直接把奸巧语解释为掩盖失信的欺骗机巧，并要求言谈文雅、戒秽污词和市井气；与底稿方向一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-004",
+      "primaryCandidateParagraphId": "LECTURE-30-P-0023",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“见未真”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-005",
+      "primaryCandidateParagraphId": "LECTURE-29-P-0017",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“事非宜”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-006",
+      "primaryCandidateParagraphId": "LECTURE-31-P-0010",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“凡道字”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-007",
+      "primaryCandidateParagraphId": "LECTURE-31-P-0019",
+      "proposedStatus": "difference",
+      "rationale": "底稿宽泛表述与己无关不要多管；讲稿把“莫闲管”限于是非闲话，并要求公司重要事项积极参与，关键适用边界不同。",
+      "confidence": "high",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-008",
+      "primaryCandidateParagraphId": "LECTURE-32-P-0018",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“见人善”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-009",
+      "primaryCandidateParagraphId": "LECTURE-32-P-0032",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“见人恶”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-010",
+      "primaryCandidateParagraphId": "LECTURE-33-P-0009",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“唯德学”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-011",
+      "primaryCandidateParagraphId": "LECTURE-32-P-0034",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“若衣服”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-012",
+      "primaryCandidateParagraphId": "LECTURE-33-P-0019",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“闻过怒”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-013",
+      "primaryCandidateParagraphId": "LECTURE-33-P-0023",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“闻誉恐”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-014",
+      "primaryCandidateParagraphId": "LECTURE-34-P-0008",
+      "proposedStatus": "no-difference",
+      "rationale": "第33讲解释无意造成的不当为错，原主候选解释明知故犯为恶；与底稿对无心、有心的区分一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XIN-015",
+      "primaryCandidateParagraphId": "LECTURE-33-P-0020",
+      "proposedStatus": "no-difference",
+      "rationale": "主候选解释知过与改过；新增覆盖候选 LECTURE-34-P-0025 直接解释“倘掩饰，增一辜”。合并比较后与底稿的改过、不可掩饰主旨一致，预审未识别关键行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "transcription-only",
+      "flags": [
+        {
+          "type": "transcription-only",
+          "note": "底稿“掩饰”与讲稿部分转写“揜饰”为异体/转写差别，预审未识别语义变化。"
+        }
+      ]
+    },
+    {
+      "unitId": "DZG-FAZ-001",
+      "primaryCandidateParagraphId": "LECTURE-35-P-0015",
+      "proposedStatus": "difference",
+      "rationale": "底稿把“凡是人”限定为人与人互爱；讲稿由“天同覆、地同载”进一步扩展到动物和万物，行为对象范围扩大。",
+      "confidence": "medium",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-002",
+      "primaryCandidateParagraphId": "LECTURE-35-P-0020",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“行高者”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-003",
+      "primaryCandidateParagraphId": "LECTURE-35-P-0021",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“才大者”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-004",
+      "primaryCandidateParagraphId": "LECTURE-35-P-0029",
+      "proposedStatus": "no-difference",
+      "rationale": "第35讲直接解释不轻视、诋毁他人才华及嫉妒后果；与原主候选的己有能勿自私合并后与底稿一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-005",
+      "primaryCandidateParagraphId": "LECTURE-36-P-0017",
+      "proposedStatus": "no-difference",
+      "rationale": "第35至36讲分别解释不谄富、不骄贫和不厌故、不喜新；与底稿的平等、念旧主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-006",
+      "primaryCandidateParagraphId": "LECTURE-36-P-0031",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“人不闲”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-007",
+      "primaryCandidateParagraphId": "LECTURE-36-P-0038",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“人有短”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-008",
+      "primaryCandidateParagraphId": "LECTURE-37-P-0003",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“道人善”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-009",
+      "primaryCandidateParagraphId": "LECTURE-35-P-0003",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“扬人恶”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-010",
+      "primaryCandidateParagraphId": "LECTURE-37-P-0007",
+      "proposedStatus": "no-difference",
+      "rationale": "第37讲直接解释该规劝时不规劝会失去关系本分，并补充规劝时机；与底稿“道两亏”的主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-011",
+      "primaryCandidateParagraphId": "LECTURE-37-P-0014",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“凡取与”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-012",
+      "primaryCandidateParagraphId": "LECTURE-37-P-0020",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“将加人”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-013",
+      "primaryCandidateParagraphId": "LECTURE-37-P-0025",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“恩欲报”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-014",
+      "primaryCandidateParagraphId": "LECTURE-38-P-0006",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“待婢仆”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-FAZ-015",
+      "primaryCandidateParagraphId": "LECTURE-38-P-0008",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“势服人”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-QR-001",
+      "primaryCandidateParagraphId": "LECTURE-39-P-0013",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“同是人”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-QR-002",
+      "primaryCandidateParagraphId": "LECTURE-39-P-0017",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“果仁者”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-QR-003",
+      "primaryCandidateParagraphId": "LECTURE-39-P-0018",
+      "proposedStatus": "difference",
+      "rationale": "底稿把“亲仁”解释为亲近仁者；讲稿进一步解释为时时把教诲放在心上并依教奉行，核心实践方式发生扩展。",
+      "confidence": "medium",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-QR-004",
+      "primaryCandidateParagraphId": "LECTURE-39-P-0012",
+      "proposedStatus": "no-difference",
+      "rationale": "第40讲连续解释不亲仁会受不良朋友和环境影响，并提出辨别、远离小人的行为结论；与底稿主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-001",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0013",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“不力行”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-002",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0015",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“但力行”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-003",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0019",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“读书法”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-004",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0022",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“方读此”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-005",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0028",
+      "proposedStatus": "no-difference",
+      "rationale": "底稿与课程原文作“工夫到”，主讲稿作“功夫到”；预审视为纯转写用字差别，未识别释义变化，但必须保留两种来源原貌。",
+      "confidence": "high",
+      "differenceType": "transcription-only",
+      "flags": [
+        {
+          "type": "transcription-only",
+          "note": "底稿与课程原文作“工夫到”，主讲稿作“功夫到”；预审视为纯转写用字差别，未识别释义变化，但必须保留两种来源原貌。"
+        }
+      ]
+    },
+    {
+      "unitId": "DZG-XW-006",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0029",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“心有疑”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-007",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0032",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“房室清”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "medium",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-008",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0033",
+      "proposedStatus": "no-difference",
+      "rationale": "第40讲相邻段分别解释墨磨偏反映心不端、字不敬反映心散乱；与底稿主旨一致。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-009",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0035",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“列典籍”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-010",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0036",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“虽有急”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-011",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0037",
+      "proposedStatus": "difference",
+      "rationale": "底稿把“非圣书”收窄为无益身心的书刊；讲稿更强调非善书不可看并以经典为最保险选择，资料筛选范围与行为强度存在差别。",
+      "confidence": "medium",
+      "differenceType": "semantic",
+      "flags": []
+    },
+    {
+      "unitId": "DZG-XW-012",
+      "primaryCandidateParagraphId": "LECTURE-40-P-0038",
+      "proposedStatus": "no-difference",
+      "rationale": "候选讲稿对“勿自暴”的解释与底稿方向一致；新增内容主要是例证、延伸或实践说明，预审未识别关键字义、主旨或行为结论冲突。",
+      "confidence": "high",
+      "differenceType": "none",
+      "flags": []
+    }
+  ]
+}

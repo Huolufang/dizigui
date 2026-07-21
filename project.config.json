@@ -1,0 +1,15 @@
+{
+  "description": "弟子规学堂 v2.0｜完全离线个人学习工具",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "dizigui-school-v2",
+  "miniprogramRoot": "miniprogram/",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "urlCheck": false
+  },
+  "simulatorType": "wechat"
+}

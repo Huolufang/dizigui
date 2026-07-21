@@ -1,0 +1,38 @@
+{
+  "contentVersion": "2.0",
+  "sources": [
+    {
+      "id": "SRC-V1",
+      "name": "弟子规学堂 v1.1.0 小程序数据",
+      "type": "legacy-input",
+      "file": "dizigui-miniprogram-clean-v1.1.0.zip",
+      "bytes": 456589,
+      "sha256": "a0fc4fb910fa433c9a1c15de60cf59dcdd7ed4a744debf20968df02211e03dfe",
+      "versionStatus": "用户提供的 v1.1.0 受控快照",
+      "purpose": "规范原文对照、40 讲正文与课程候选分组",
+      "notes": "40 讲未记录原始出版物、网页或整理版本。"
+    },
+    {
+      "id": "SRC-NOTES",
+      "name": "《弟子规》题解·注释·译文（学习整理版）",
+      "type": "public-study-notes",
+      "file": "弟子规-题解注释译文.md",
+      "bytes": 30808,
+      "sha256": "7721fe0655bbec6e8c4135cdfb6ec30a8676d2aaa19196291bcd7d31911e9d72",
+      "versionStatus": "公开学习资料整理版",
+      "purpose": "字词注释与基础译文底稿",
+      "notes": "非权威定本，不视为蔡老师观点。"
+    },
+    {
+      "id": "SRC-CANONICAL",
+      "name": "《弟子规》v2.0 规范原文",
+      "type": "controlled-canonical-text",
+      "file": "dizigui-original.md",
+      "bytes": 6727,
+      "sha256": "9131b447c1b3742ae9b40b2b0aadc02dcd9c488580e7712bcd7a13d514f4d64d",
+      "versionStatus": "产品所有者于 2026-07-18 确认",
+      "purpose": "小程序规范原文、18 课分组与 90 单元搜索索引",
+      "notes": "异文裁决采用“进必趋”和“后有急，借不难”；来源讲稿转写差异保持原貌。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<view wx:if="{{course}}" class="page">
+  <view class="cover color-{{course.color}}">
+    <view class="between"><text class="eyebrow">课程 {{course.orderLabel}}</text><text class="tag">{{statusLabel}}</text></view>
+    <view class="display">{{course.chapter}}</view>
+    <view class="cover-summary">{{course.title}}</view>
+    <view class="between cover-foot"><text>约 {{course.estimate}} 分钟</text><text>{{course.units.length}} 个原文单元</text></view>
+  </view>
+  <view class="section-head"><text class="eyebrow">本课原文范围</text></view>
+  <view class="card originals"><view wx:for="{{course.units}}" wx:key="id" id="{{item.id}}" class="original-unit"><text class="unit-no">{{index + 1}}</text><text class="serif">{{item.text}}</text></view></view>
+  <view class="section-head"><text class="eyebrow">五步学习</text></view>
+  <view class="steps card">
+    <view class="step-entry" data-step="1" bindtap="openStep"><text class="step-no">01</text><text>复习旧课</text><text class="step-arrow">→</text></view>
+    <view class="step-entry" data-step="2" bindtap="openStep"><text class="step-no">02</text><text>学习原文</text><text class="step-arrow">→</text></view>
+    <view class="step-entry" data-step="3" bindtap="openStep"><text class="step-no">03</text><text>课程讲解</text><text class="step-arrow">→</text></view>
+    <view class="step-entry" data-step="4" bindtap="openStep"><text class="step-no">04</text><text>背诵练习</text><text class="step-arrow">→</text></view>
+    <view class="step-entry" data-step="5" bindtap="openStep"><text class="step-no">05</text><text>理解反思</text><text class="step-arrow">→</text></view>
+  </view>
+  <view wx:if="{{course.relatedLectures.length}}" class="section-head"><text class="eyebrow">相关讲次候选</text><view class="h2">可进入完整讲稿核对</view></view>
+  <view class="card" wx:if="{{course.relatedLectures.length}}"><view wx:for="{{course.relatedLectures}}" wx:key="*this" class="link-row" data-number="{{item}}" bindtap="openLecture"><text>《细讲弟子规》第 {{item}} 讲</text><text class="arrow">↗</text></view></view>
+  <button class="pill sticky-action" bindtap="start">{{session ? '继续本轮学习' : status === 'completed' ? '重新学习本课' : '开始五步学习'}} →</button>
+</view>

@@ -1,0 +1,10 @@
+.cover { min-height: 560rpx; padding: 34rpx; border-radius: 34rpx; display: flex; flex-direction: column; }
+.color-lilac { background: var(--lilac); }.color-lime { background: var(--lime); }.color-cream { background: var(--cream); }.color-pink { background: var(--pink); }.color-mint { background: var(--mint); }.color-coral { background: var(--coral); }
+.cover .display { margin-top: 100rpx; font-size: 66rpx; }
+.cover-summary { margin-top: 18rpx; color: #45443f; font-size: 28rpx; font-weight: 600; line-height: 1.5; }
+.cover-foot { margin-top: auto; padding-top: 24rpx; border-top: 1rpx solid rgba(17,17,15,.35); font-size: 24rpx; }
+.originals { padding-top: 10rpx; padding-bottom: 10rpx; }
+.original-unit { padding: 24rpx 0; border-bottom: 1rpx solid var(--line); display: flex; gap: 26rpx; font-size: 34rpx; line-height: 1.65; }.original-unit:last-child { border: 0; }
+.unit-no { color: var(--muted); font-size: 22rpx; }
+.steps > .step-entry { min-height: 92rpx; border-bottom: 1rpx solid var(--line); display: flex; align-items: center; gap: 28rpx; }.steps > .step-entry:last-child { border: 0; }.steps .step-no { color: var(--muted); font-size: 22rpx; font-weight: 650; }.steps .step-entry > text:nth-child(2) { font-size: 29rpx; font-weight: 600; }.step-arrow { margin-left: auto; font-size: 30rpx; }
+.sticky-action { margin-top: 34rpx; }

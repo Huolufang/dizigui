@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="between heading"><view><view class="display">循序渐进，\n也可自由查阅。</view></view></view>
+  <view class="search-entry" bindtap="openSearch">⌕　搜索原文、课程或讲稿</view>
+  <view class="summary between"><text>{{completed}} 课已完成</text><text>共 18 课</text></view>
+  <view wx:for="{{courses}}" wx:key="id" class="course-card color-{{item.color}}" data-id="{{item.id}}" bindtap="openCourse">
+    <view class="between"><text class="eyebrow">课程 {{item.orderLabel}}</text><text class="tag status-{{item.status}}">{{item.statusLabel}}</text></view>
+    <view class="h1 serif">{{item.chapter}}</view>
+    <view class="course-summary">{{item.title}}</view>
+    <view class="serif range">{{item.units[0].text}}</view>
+    <view class="between foot"><text class="small">约 {{item.estimate}} 分钟</text><text class="arrow">↗</text></view>
+  </view>
+</view>
